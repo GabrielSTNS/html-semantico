@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semântico</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Sobre mim</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Teste de HTML</h1>
+
+      <p>Essa página foi feita para fortalecer habilidades em HTML puro.</p>
+
+      <section>
+        <h2>Alguma carta de Magic</h2>
+        <figure>
+          <img
+            src="https://tcgplayer-cdn.tcgplayer.com/product/646045_in_600x600.jpg"
+            alt="Venom, Eddie Brock"
+            width="250"
+          />
+          <figcaption>
+            Sempre que outra criatura morrer, adicione um marcador +1/+1 em
+            Venom. Se a criatura que morreu for um vilão, compre uma carta.
+          </figcaption>
+          <p>
+            Clique
+            <a
+              href="https://www.tcgplayer.com/content/magic-the-gathering/deck/Venom-Eddie-Brock/517026/"
+              target="_blank"
+              >AQUI</a
+            >
+            para acessar o deck completo com esta carta como Commander.
+          </p>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Deixe abaixo suas informações e eu entrarei em contato!</h2>
+      <form action="">
+        <fieldset>
+          <legend>Formulário de contato</legend>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Informe seu nome"
+            required
+            pattern="^[A-Za-zÀ-ÿ\s-]{3,}$"
+            title="O nome deve conter no mínimo 3 caracteres."
+          />
+          <br /><br />
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Insira seu E-mail"
+            required
+            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Insira seu e-mail, ex: email@email.com"
+          />
+          <br /><br />
+          <label for="telefone">Telefone:</label>
+          <input
+            type="tel"
+            name="telefone"
+            id="telefone"
+            placeholder="Insira seu telefone"
+            required
+            pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$"
+            title="Informe seu número de telefone"
+          />
+          <br /><br />
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+
+      <p>&copy; 2025 Gabriel. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
