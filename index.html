@@ -4,24 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Semântico</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Sobre mim</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contatos</a></li>
-        </ul>
-      </nav>
+      <h1>Carta de Magic The Gatering Arena</h1>
+      <p>Esta página contém as iformações da carta de Magic do Venom.</p>
     </header>
     <main>
-      <h1>Teste de HTML</h1>
-
-      <p>Essa página foi feita para fortalecer habilidades em HTML puro.</p>
-
-      <section>
-        <h2>Alguma carta de Magic</h2>
+      <section class="card-info">
+        <h2>Venom, Eddie Brock</h2>
         <figure>
           <img
             src="https://tcgplayer-cdn.tcgplayer.com/product/646045_in_600x600.jpg"
@@ -29,12 +21,14 @@
             width="250"
           />
           <figcaption>
-            Sempre que outra criatura morrer, adicione um marcador +1/+1 em
-            Venom. Se a criatura que morreu for um vilão, compre uma carta.
+            Sempre que outra criatura morrer, adicione um marcador
+            <span class="poder">+1/+1</span> em Venom. Se a criatura que morreu
+            for um vilão, compre uma carta.
           </figcaption>
-          <p>
+          <p class="texto_carta">
             Clique
             <a
+              class="card-link"
               href="https://www.tcgplayer.com/content/magic-the-gathering/deck/Venom-Eddie-Brock/517026/"
               target="_blank"
               >AQUI</a
@@ -45,7 +39,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
       <h2>Deixe abaixo suas informações e eu entrarei em contato!</h2>
       <form action="">
         <fieldset>

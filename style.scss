@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// 1 - criar um Mixin contendo os backgrounds image, size, repeat e position
+@mixin background($bg-img) {
+    background-image: url(#{$bg-img});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin reset() {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+// 2 - criar variáveis para colocar cores no cabeçalho do site
+$primary-color: #8E2424;
+$secondary-color: #ffffff;
+$header-bg: #FFE4C4;
+$theme: "dark";
+
+// Declarando as variáveis como nulas antes da estrutura
+$bg-color: null;
+$text-color: null;
+
+// 3 - criar uma estrutura condicional para chegar se o site está no tema "light" ou "dark"
+@if $theme == "light" {
+    $bg-color: #ffffff;
+    $text-color: #111111;
+} @else if $theme == "dark" {
+    $bg-color: #111111 ;
+    $text-color: #ffffff;
+} @else {
+    $bg-color: #cccccc;
+    $text-color: #333333;
+}
+
+// 4 - Aplicando os estilos
+* {
+    @include reset;
+}
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+header {
+    background-color: $header-bg;
+    color: $primary-color;
+    p {
+        color: $secondary-color;
+    }
+
+    @include background("https://cdn.eso.org/images/screen/eso1019a.jpg");
+}
+
+.card-info {
+    .poder {
+        color: $primary-color;
+    }
+    .card-link {
+        text-decoration: none;
+        color: $primary-color;
+    }
+}

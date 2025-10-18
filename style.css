@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+header {
+  background-color: #FFE4C4;
+  color: #8E2424;
+  background-image: url(https://cdn.eso.org/images/screen/eso1019a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header p {
+  color: #ffffff;
+}
+
+.card-info .poder {
+  color: #8E2424;
+}
+.card-info .card-link {
+  text-decoration: none;
+  color: #8E2424;
+}/*# sourceMappingURL=style.css.map */
